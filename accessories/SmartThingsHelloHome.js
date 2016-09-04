@@ -11,7 +11,7 @@ function SmartThingsHelloHomeAccessory(log, config) {
 SmartThingsHelloHomeAccessory.prototype = {
   execute: function() {
     var that = this
-    url = "https://graph.api.smartthings.com/api/smartapps/installations/"+this.appId+"/action/execute?access_token="+this.accessToken
+    url = "https://graph-eu01-euwest1.api.smartthings.com/api/smartapps/installations/"+this.appId+"/action/execute?access_token="+this.accessToken
     console.log(url)
     request.get({
       url: url,
